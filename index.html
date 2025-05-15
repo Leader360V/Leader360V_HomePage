@@ -1,13 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的GitHub Pages网站</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Leader360V: A Large-scale, Real-world 360 Video Dataset for Multi-task Learning in Diverse Environments">
+  <meta name="keywords" content="Leader360V">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Leader360V: A Large-scale, Real-world 360 Video Dataset for Multi-task Learning in Diverse Environments</title>
+
+  <link rel="icon" href="">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-chtml.js">
+  </script>
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <style>
+    .icml-label {
+      color: red;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+    }
+  </style>
 </head>
+
+<!-- <header id="header"> -->
+				<!-- <h1>Bio-inspired AI and Robotics (BioRAI) Lab</h1> -->
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="container">
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./Dataset.html">Dataset</a></li>
+							<li><a href="./Pipeline.html">Pipeline</a></li>
+						</ul>
+					</nav>
+			<!-- </header> -->
+
 <body>
-    <h1>Hello GitHub Pages!</h1>
-    <p>欢迎访问我的个人网站</p>
-    <p>欢迎访问我的个人网站</p>
-    <p>欢迎访问我的个人网站</p>
-    <p>欢迎访问我的个人网站</p>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+        </a>
+        <div class="navbar-dropdown">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <span class="mathvista" style="vertical-align: middle">Leader360V</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle">
+            A Large-scale, Real-world 360 Video Dataset for Multi-task Learning in Diverse Environments
+          </h2>
+        
+           <div class="icml-label">NeurIPS2025</div>
+           <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+
+              <!-- Arxiv Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v="
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/Leader360V/Leader360V"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span> 
+
+              <!-- Visualization Link. -->
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/datasets/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🔮</p>
+                  </span>
+                  <span>Visualize</span>
+                </a>
+              </span> -->
+              
+              <!-- Leaderboard Link. -->
+              <span class="link-block">
+                <a href="https://leader360v.github.io/Leader360V_HomePage/#abstract"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🏆</p>
+                  </span>
+                  <span>Abstract</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3", id="abstract">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Answering questions with Chain-of-Thought (CoT) has significantly enhanced the reasoning capabilities of Large Language Models (LLMs), yet its impact on Large Multimodal Models (LMMs) still lacks a systematic assessment and in-depth investigation. 
+            360 video captures the complete surrounding scenes with the ultra-large field of view of 360 $\times$ 180. This makes 360 scene understanding tasks, <i>e.g.</i>, segmentation and tracking, crucial for autonomous driving, robotics, <i>etc</i>. With the recent emergence of foundation models, the community is, however, impeded by the lack of large-scale, labelled real-world datasets. This is caused by the inherent spherical properties, <i>e.g.</i>, severe distortion in polar regions, and content discontinuities, rendering the annotation costly yet complex. 
+            This paper introduces <b>Leader360V</b>, the first large-scale (10K+), labeled real-world 360 video datasets for instance segmentation and tracking. 
+            Our datasets enjoy high scene diversity— ranging from indoor and urban settings to natural and dynamic outdoor scenes. To automate annotation, we design an automatic labeling pipeline, which subtly coordinates pre-trained 2D segmentors and large language models (LLMs) to facilitate the labeling. The pipeline operates in three novel stages. Specifically, in the <b>Initial Annotation Phase</b>, we introduce a Semantic- and Distortion-aware Refinement (<b>SDR</b>) module, which combines object mask proposals from multiple 2D segmentors with LLM-verified semantic labels. These are then converted into mask prompts to guide SAM2 in generating distortion-aware masks for subsequent frames. In the <b>Auto-Refine Annotation Phase</b>, missing or incomplete regions are corrected either by applying the SDR again or resolving the discontinuities near the horizontal borders. The <b>Manual Revision Phase</b> finally incorporates LLMs and human annotators to further refine and validate the annotations. 
+            Extensive user studies and evaluations demonstrate the effectiveness of our labeling pipeline and highlight the significance of our Leader360V in paving the way for more scalable 360 scene understanding.  
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="content has-text-centered">
+      <img src="./static\images\Teaser_Figure_1_00.png" alt="grade-lv" width="70%"/>
+      <p>The overall of our Leader360 dataset.</p>
+    </div>
+</div>
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a href="https://mathverse-cuhk.github.io/">MathVerse</a> and <a href="https://nerfies.github.io/">Nerfies</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
 </body>
 </html>
