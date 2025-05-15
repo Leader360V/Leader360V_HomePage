@@ -195,3 +195,13 @@ body {
 			padding: 0 1.25em;
 		}
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 4rem;
+  /* margin-right: 1rem; */
+  vertical-align: middle;
+}
