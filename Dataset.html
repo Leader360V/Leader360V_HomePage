@@ -98,52 +98,52 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
-        <div class="content has-text-justified" style="font-size: 1.15rem; line-height: 1.8;">
-          <!-- 新增样式：段落基础样式 -->
+        <div class="content has-text-justified" style="font-size: 1.15rem;">
+          <!-- 新增段落样式 -->
           <style>
             .custom-paragraph {
+              text-indent: 2em;    /* 段首缩进两格 */
               position: relative;
-              padding-left: 0em;  /* 为圆圈预留空间 */
-              margin-bottom: 1.5em; /* 段间距（约2个中文字符高度） */
-              text-indent: -2em;  /* 首行缩进与圆圈对齐 */
+              padding-left: 2.5em;  /* 为圆圈预留空间 */
+              margin-bottom: 1.2em; /* 段落间距 */
             }
             .custom-paragraph::before {
-              content: "●";       /* 圆圈符号 */
-              color: #4a4a4a;      /* 圆圈颜色 */
+              content: "●";        /* 圆圈符号 */
+              color: #2C3E50;      /* 符号颜色 */
+              font-size: 0.8em;    /* 符号大小 */
               position: absolute;
               left: 0;
-              top: 0.1em;         /* 垂直居中微调 */
-              font-size: 0.8em;   /* 圆圈大小 */
+              top: 0.3em;          /* 垂直居中调整 */
             }
           </style>
- 
+
           <p class="custom-paragraph">
             <span class="mathvista">Leader360V </span>is the <b>first</b> large-scale (10K+), labeled real-world 360 video datasets for instance segmentation and tracking. 
             Our datasets enjoy high scene diversity, ranging from indoor and urban settings to natural and dynamic outdoor scenes. 
           </p>
-          
           <p class="custom-paragraph">
             All videos in this dataset have undergone standardized preprocessing, including video clipping, facial anonymization for privacy protection, and balanced scene distribution across categories.
           </p>
-          
           <p class="custom-paragraph">
             Regarding dataset composition, we integrated existing 360 video datasets (either unlabeled or annotated for single tasks) and supplemented them with newly collected self-recorded videos. 
             All content was then re-annotated to support joint segmentation and tracking tasks.
           </p>
-          
           <p class="custom-paragraph">
             Experiments demonstrate that models trained on Leader360V achieve superior performance in 360 video segmentation and tracking, with significant improvements in task accuracy. 
           </p>
-          
           <p class="custom-paragraph">
             By providing richly annotated data for 360 video scene understanding and demonstrating versatility across downstream tasks, Leader360V advances research frontiers in related domains while enabling the development of more generalized 360 video comprehension models. 
             This progress offers robust support for applications in autonomous driving, robotics, virtual reality, and beyond. Looking ahead, we plan to further expand the dataset's scope to accommodate an even broader spectrum of research tasks.
           </p>
-          
           <p class="custom-paragraph">
             Following paper acceptance, we will publicly release all code and datasets for free use by researchers in academia and industry.
           </p>
 
+        <!-- <div class="box m-5">
+          <div class="content has-text-centered">
+            <img src="./static/images/sample_dataset_00.png" alt="sample_dataset" style="max-width: 60%;"/>
+          </div>
+        </div> -->
 
         </div>
       </div>
@@ -151,11 +151,7 @@
   </div>
 </section>
 
-        <!-- <div class="box m-5">
-          <div class="content has-text-centered">
-            <img src="./static/images/sample_dataset_00.png" alt="sample_dataset" style="max-width: 60%;"/>
-          </div>
-        </div> -->
+
 <section class="section">
   <div class="container">
 
