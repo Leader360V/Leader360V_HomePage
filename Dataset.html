@@ -96,32 +96,53 @@
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
-      <!-- <div class="column is-full-width has-text-centered"> -->
-        <div class="column is-four-fifths">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
-        <div class="content has-text-justified">
-          <p>
+        <div class="content has-text-justified" style="font-size: 1.15rem; line-height: 1.8;">
+          <!-- 新增样式：段落基础样式 -->
+          <style>
+            .custom-paragraph {
+              position: relative;
+              padding-left: 1.8em;  /* 为圆圈预留空间 */
+              margin-bottom: 1.5em; /* 段间距（约2个中文字符高度） */
+              text-indent: -1.8em;  /* 首行缩进与圆圈对齐 */
+            }
+            .custom-paragraph::before {
+              content: "●";       /* 圆圈符号 */
+              color: #4a4a4a;      /* 圆圈颜色 */
+              position: absolute;
+              left: 0;
+              top: 0.1em;         /* 垂直居中微调 */
+              font-size: 0.8em;   /* 圆圈大小 */
+            }
+          </style>
+ 
+          <p class="custom-paragraph">
             <span class="mathvista">Leader360V </span>is the <b>first</b> large-scale (10K+), labeled real-world 360 video datasets for instance segmentation and tracking. 
             Our datasets enjoy high scene diversity, ranging from indoor and urban settings to natural and dynamic outdoor scenes. 
           </p>
-          <p>
+          
+          <p class="custom-paragraph">
             All videos in this dataset have undergone standardized preprocessing, including video clipping, facial anonymization for privacy protection, and balanced scene distribution across categories.
           </p>
-          <p>
+          
+          <p class="custom-paragraph">
             Regarding dataset composition, we integrated existing 360 video datasets (either unlabeled or annotated for single tasks) and supplemented them with newly collected self-recorded videos. 
             All content was then re-annotated to support joint segmentation and tracking tasks.
           </p>
-          <p>
+          
+          <p class="custom-paragraph">
             Experiments demonstrate that models trained on Leader360V achieve superior performance in 360 video segmentation and tracking, with significant improvements in task accuracy. 
           </p>
-          <p>
+          
+          <p class="custom-paragraph">
             By providing richly annotated data for 360 video scene understanding and demonstrating versatility across downstream tasks, Leader360V advances research frontiers in related domains while enabling the development of more generalized 360 video comprehension models. 
             This progress offers robust support for applications in autonomous driving, robotics, virtual reality, and beyond. Looking ahead, we plan to further expand the dataset's scope to accommodate an even broader spectrum of research tasks.
           </p>
-          <p>
+          
+          <p class="custom-paragraph">
             Following paper acceptance, we will publicly release all code and datasets for free use by researchers in academia and industry.
           </p>
-          
 
         <!-- <div class="box m-5">
           <div class="content has-text-centered">
@@ -132,7 +153,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -169,26 +189,74 @@
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Parking_Smaple_1.jpg" alt="Home" width="80%"/>
+              <img src="./static/images/examples/Amusementpark_Sample_1.jpg" alt="Amusement_park" width="80%"/>
+              <p>Amusement oark snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Parking_Smaple_1.jpg" alt="Parking_lot" width="80%"/>
               <p>Parking lot snapshot</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Piazza_Smaple_1.jpg" alt="Home" width="80%"/>
+              <img src="./static/images/examples/Controlroom_Sample_1.jpg" alt="Control_room" width="80%"/>
+              <p>Control room snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Piazza_Sample_1.jpg" alt="Piazza" width="80%"/>
               <p>Piazza snapshot</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Unfinished_building_Sample_1.jpg" alt="Home" width="80%"/>
+              <img src="./static/images/examples/Dancingroom_Sample_1.jpg" alt="Dancing_room" width="80%"/>
+              <p>Dancing room snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Unfinished_building_Sample_1.jpg" alt="Unfinished_building" width="80%"/>
               <p>Unfinished building snapshot</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Bookstore_Sample_1.jpg" alt="Home" width="80%"/>
+              <img src="./static/images/examples/Highspeedrail_Sample_1.jpg" alt="High_speed_rail" width="80%"/>
+              <p>High-speed rail snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Bookstore_Sample_1.jpg" alt="Bookstore" width="80%"/>
               <p>Bookstore snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Musictheatre_Sample_1.jpg" alt="Music_theatre" width="80%"/>
+              <p>Music theatre snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Office_Sample_1.jpg" alt="Office" width="80%"/>
+              <p>Office snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Restaurant_Sample_1.jpg" alt="Restaurant" width="80%"/>
+              <p>Restaurant snapshot</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="./static/images/examples/Basement_Sample_1.jpg" alt="Basement" width="80%"/>
+              <p>Basement snapshot</p>
             </div>
           </div>
 
@@ -217,7 +285,7 @@
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Sports_Park_Sample_1.jpg" alt="sportspark" width="80%"/>
+              <img src="./static/images/examples/Sports_Park_Sample_1.jpg" alt="sports_park" width="80%"/>
               <p>Sports Park Outdoor Snapshot</p>
             </div>
           </div>
@@ -229,73 +297,73 @@
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Alley_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Alley_Sample_1.jpg" alt="Alley" width="80%"/>
               <p>Allty snapshot</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Basketball_court_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Basketball_court_Sample_1.jpg" alt="Basketball_court" width="80%"/>
               <p>Outdoor basketball court scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Beach_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Beach_Sample_1.jpg" alt="Beach" width="80%"/>
               <p>Beach scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Community_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Community_Sample_1.jpg" alt="Community" width="80%"/>
               <p>Community scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Grassland_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Grassland_Sample_1.jpg" alt="Grassland" width="80%"/>
               <p>Grassland scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Park_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Park_Sample_1.jpg" alt="Park" width="80%"/>
               <p>Park snapshot</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Sea_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Sea_Sample_1.jpg" alt="Sea" width="80%"/>
               <p>Sea scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Snowfield_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Snowfield_Sample_1.jpg" alt="Snowfield" width="80%"/>
               <p>Snowfield scenario</p>
             </div>
           </div>
            <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Station_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Station_Sample_1.jpg" alt="Station" width="80%"/>
               <p>Outdoor station scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Street_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Street_Sample_1.jpg" alt="Street" width="80%"/>
               <p>Street snapshot</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Wildness_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Wildness_Sample_1.jpg" alt="Wildersness" width="80%"/>
               <p>Wilderness scenario</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="./static/images/examples/Seaside_Sample_1.jpg" alt="Bird's_eye" width="80%"/>
+              <img src="./static/images/examples/Seaside_Sample_1.jpg" alt="Seaside" width="80%"/>
               <p>Seaside scenario</p>
             </div>
           </div>
