@@ -120,18 +120,18 @@
           </style>
 
           <p class="custom-paragraph">
-            <span class="mathvista">A$^3$360V Pipeline </span>is an automatic labeling pipeline, which subtly coordinates pre-trained 2D segmentors and large language models (LLMs) to facilitate the labeling. The pipeline operates in three novel stages.
+            <span class="mathvista" style="font-weight: bold;">A$^3$360V Pipeline </span>is an automatic labeling pipeline, which subtly coordinates pre-trained 2D segmentors and large language models (LLMs) to facilitate the labeling. The pipeline operates in three novel stages.
           </p>
           <p class="custom-paragraph">
-            <span class="mathvista">Initial Annotation Phase:</span> We first extract keyframes and use multiple 2D segmentors (e.g., CropFormer , OneFormer) to generate semantic and instance segmentation proposals. 
+            <span class="mathvista" style="font-weight: bold;">Initial Annotation Phase:</span> We first extract keyframes and use multiple 2D segmentors (e.g., CropFormer , OneFormer) to generate semantic and instance segmentation proposals. 
             These outputs are unified and aligned via LLM-based semantic matching, then refined through a Semantic- and Distortion-aware Refinement (SDR) Module that leverages SAM2 to produce high-quality panoramic masks.
           </p>
           <p class="custom-paragraph">
-            <span class="mathvista">Auto-Refine Annotation Phase:</span> For subsequent keyframes in the video, we iteratively propagate annotations and identify low-quality regions based on mask coverage. 
+            <span class="mathvista" style="font-weight: bold;">Auto-Refine Annotation Phase:</span> For subsequent keyframes in the video, we iteratively propagate annotations and identify low-quality regions based on mask coverage. 
             Frames failing coverage thresholds are reprocessed using a GPT-guided Motion-Continuity Refinement (MCR) module, which resolves annotation inconsistencies across left-right ERP and recovers missing masks caused by occlusion or distortion. 
           </p>
           <p class="custom-paragraph">
-            <span class="mathvista">Manual Revise Phase:</span> Finally, human annotators validate and correct the outputs from the previous stages. 
+            <span class="mathvista" style="font-weight: bold;">Manual Revise Phase:</span> Finally, human annotators validate and correct the outputs from the previous stages. 
             Multi-annotator review ensures consistency and completeness across frames, producing the final high-quality annotations.
           </p>
           <p class="custom-paragraph">
