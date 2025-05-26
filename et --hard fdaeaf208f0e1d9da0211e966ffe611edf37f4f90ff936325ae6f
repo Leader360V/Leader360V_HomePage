@@ -1,0 +1,127 @@
+[33mcommit d9da0211e966ffe611edf37f4f90ff936325ae6f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Shea <wenshq02@163.com>
+Date:   Mon May 26 17:19:20 2025 +0800
+
+    pipeline
+
+[33mcommit 002e69ce5fba9299d62c0de126ef612832e25c5f[m
+Author: Shea <wenshq02@163.com>
+Date:   Mon May 26 16:39:32 2025 +0800
+
+    “pipeline”
+
+[33mcommit 70071127d01121efa4f875d6db5e9528fa129e49[m
+Author: Shea <wenshq02@163.com>
+Date:   Thu May 22 21:03:26 2025 +0800
+
+    Dataset_images
+
+[33mcommit 83496561360a60244fe1a2af11b621f7e1876805[m
+Author: Shea <wenshq02@163.com>
+Date:   Thu May 22 20:55:27 2025 +0800
+
+    Dataset_images
+
+[33mcommit 2b1682b624196f73e40b8819ad3ba237a4b08472[m
+Author: Shea <wenshq02@163.com>
+Date:   Thu May 22 20:49:40 2025 +0800
+
+    Dataset_images
+
+[33mcommit 5568019b215554d7cb45d972155be2ba0c6bfce9[m
+Author: Shea <wenshq02@163.com>
+Date:   Thu May 22 19:45:35 2025 +0800
+
+    overview
+
+[33mcommit e3c2d388f0fcaa721c9ca576889dfef471fe7566[m
+Author: swen750 <swen750@mgmt-4.hkust-gz.edu.cn>
+Date:   Thu May 22 18:58:55 2025 +0800
+
+    overview
+
+[33mcommit 721dd10f4bb0c13736b88f3fd725d5d3b36b5501[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 22 14:36:40 2025 +0800
+
+    embed
+
+[33mcommit 56ec97912699eb0464d52db33a0a8333c8935f1f[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Fri May 16 16:45:39 2025 +0800
+
+    add overview
+
+[33mcommit 13f6a4fa28b86027df8b408612063778d3451507[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 21:10:00 2025 +0800
+
+    refined
+
+[33mcommit 8c718e682c4ad090514c62a303740562cddc7fde[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 21:04:53 2025 +0800
+
+    refine
+
+[33mcommit 9fa0275ad96e01335867cd4548d1b84ef99e3221[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 20:54:33 2025 +0800
+
+    add images
+
+[33mcommit 5a4f40546f02775e0a23cf874442f026030ac0ab[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 20:18:22 2025 +0800
+
+    Structure
+
+[33mcommit b723db5f1814d9a07ce8a983a8337f49b8d4dabb[m
+Merge: 66d552d 46f1b1f
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 13:21:31 2025 +0800
+
+    Merge commit '46f1b1f68fb981cd7f460524036b71a531fdfb20'
+
+[33mcommit 66d552d4058bb9483b1b60e51a4f879bc632a554[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 13:20:54 2025 +0800
+
+    testagain
+
+[33mcommit 46f1b1f68fb981cd7f460524036b71a531fdfb20[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 13:19:43 2025 +0800
+
+    Create static.yml
+
+[33mcommit 5f87508926ffb5e71858c71f46017996a6b26079[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 13:16:54 2025 +0800
+
+    test
+
+[33mcommit cf1f746ed2368e3451cca3a146d60c645a405681[m
+Merge: cabcb61 4636b11
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 13:16:20 2025 +0800
+
+    Merge commit '4636b11d137ebff8956905d94eac28b66e896200'
+
+[33mcommit 4636b11d137ebff8956905d94eac28b66e896200[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 13:09:49 2025 +0800
+
+    Create static.yml
+
+[33mcommit cabcb615c90790432781c57e0d0bb237c1565430[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 12:54:08 2025 +0800
+
+    .gitignore
+
+[33mcommit 64182c5f454cd624e3597ad017f0a7f871b85191[m
+Author: Leader360V <leader360v@gmail.com>
+Date:   Thu May 15 12:49:18 2025 +0800
+
+    Initial commit
