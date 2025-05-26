@@ -100,9 +100,43 @@
       <!-- <div class="column is-full-width has-text-centered"> -->
         <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
-        <div class="content has-text-justified">
-          <p>
+        <div class="content has-text-justified" style="font-size: 1.15rem;">
+          <!-- 新增段落样式 -->
+          <style>
+            .custom-paragraph {
+              text-indent: 2em;    /* 段首缩进两格 */
+              position: relative;
+              padding-left: 2.5em;  /* 为圆圈预留空间 */
+              margin-bottom: 1.2em; /* 段落间距 */
+            }
+            .custom-paragraph::before {
+              content: "●";        /* 圆圈符号 */
+              color: #2C3E50;      /* 符号颜色 */
+              font-size: 0.8em;    /* 符号大小 */
+              position: absolute;
+              left: 0;
+              top: 0.3em;          /* 垂直居中调整 */
+            }
+          </style>
+
+          <p class="custom-paragraph">
             <span class="mathvista">A$^3$360V Pipeline </span>is an automatic labeling pipeline, which subtly coordinates pre-trained 2D segmentors and large language models (LLMs) to facilitate the labeling. The pipeline operates in three novel stages.
+          </p>
+          <p class="custom-paragraph">
+            <span class="mathvista">Initial Annotation Phase:</span> We first extract keyframes and use multiple 2D segmentors (e.g., CropFormer , OneFormer) to generate semantic and instance segmentation proposals. 
+            These outputs are unified and aligned via LLM-based semantic matching, then refined through a Semantic- and Distortion-aware Refinement (SDR) Module that leverages SAM2 to produce high-quality panoramic masks.
+          </p>
+          <p class="custom-paragraph">
+            <span class="mathvista">Auto-Refine Annotation Phase:</span> For subsequent keyframes in the video, we iteratively propagate annotations and identify low-quality regions based on mask coverage. 
+            Frames failing coverage thresholds are reprocessed using a GPT-guided Motion-Continuity Refinement (MCR) module, which resolves annotation inconsistencies across left-right ERP and recovers missing masks caused by occlusion or distortion. 
+          </p>
+          <p class="custom-paragraph">
+            <span class="mathvista">Manual Revise Phase:</span> Finally, human annotators validate and correct the outputs from the previous stages. 
+            Multi-annotator review ensures consistency and completeness across frames, producing the final high-quality annotations.
+          </p>
+          <p class="custom-paragraph">
+            For more specific pipeline data, please refer to the paper. 
+            We hope our research can be helpful to subsequent researchers.
           </p>
           
 
